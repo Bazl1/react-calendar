@@ -1,0 +1,26 @@
+@import "../../shared/assets/styles/vars.scss";
+
+.calendar {
+    width: 100%;
+    &__row {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+    }
+    &__row + &__row {
+        border-top: 0;
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__day {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 20px;
+        text-align: center;
+    }
+}

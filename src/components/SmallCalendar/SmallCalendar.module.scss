@@ -1,0 +1,65 @@
+@import "../../shared/assets/styles/vars.scss";
+
+.sidebar {
+    &__head {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    &__day {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+    &__callendar_row + &__callendar_row {
+        margin-top: 3px;
+    }
+    &__callendar_row {
+        display: flex;
+        gap: 3px;
+        align-items: center;
+    }
+    &__callendar_day {
+        outline: none;
+        background: transparent;
+        border: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        span {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 400;
+            border-radius: 100%;
+            transition: background 0.2s;
+        }
+        &:hover {
+            span {
+                background: $gray-hover;
+                color: $text-color;
+            }
+        }
+    }
+    &__callendar_day_current {
+        span {
+            background: $blue-color;
+            color: #fff;
+        }
+    }
+    &__previous {
+        span {
+            color: $gray-color;
+        }
+    }
+    &__active {
+        span {
+            background: rgba($blue-color, 0.5);
+            color: #fff;
+        }
+    }
+}

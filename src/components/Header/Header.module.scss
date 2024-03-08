@@ -1,0 +1,60 @@
+@import "../../shared/assets/styles/vars.scss";
+
+.header {
+    &__inner {
+        padding: 20px 0;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    &__logo {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        border: none;
+        border-radius: 100%;
+        background: transparent;
+        font-size: 18px;
+        padding: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.3s;
+        svg {
+            font-size: 18px;
+        }
+        &:hover {
+            background: $gray-hover;
+        }
+    }
+    &__month {
+        max-width: 200px;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__today {
+        outline: none;
+        background: transparent;
+        border: 1px solid $border-color;
+        border-radius: 3px;
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: background 0.3s;
+        &:hover {
+            background: $gray-hover;
+        }
+    }
+}
